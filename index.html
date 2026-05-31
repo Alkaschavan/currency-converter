@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="theme-container">
+    <button id="themeBtn">🌙 Dark Mode</button>
+</div>
+
+<div class="container">
+
+    <h2>💱 Currency Converter</h2>
+
+    <input type="number" id="amount" placeholder="Enter Amount">
+
+    <div class="currency-box">
+
+        <div class="select-box">
+            <img id="fromFlag" src="">
+            <select id="fromCurrency"></select>
+        </div>
+
+        <button id="swapBtn">⇄</button>
+
+        <div class="select-box">
+            <img id="toFlag" src="">
+            <select id="toCurrency"></select>
+        </div>
+
+    </div>
+
+    <button id="convertBtn">Convert</button>
+
+    <h3 id="result"></h3>
+
+    <div class="history">
+        <h4>Recent Conversions</h4>
+        <ul id="historyList"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
